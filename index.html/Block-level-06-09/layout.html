@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <head>
+        <p></p>
+        <title>css temple</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            /* Estilize o cabeçalho */
+            header {
+                height: 500px;
+                background-color: #6a68f0;
+                background-size: 1750px;
+                background-position: 1%;
+                padding: 10px;
+                text-align: center;
+                font-size: 35px;
+                color: white;
+            }
+
+            /* 
+Crie duas colunas/caixas que flutuam uma ao lado da outra */
+            nav {
+                float: left;
+                width: 30%;
+                height: 300px;
+                /* only for demonstration, should be removed */
+                background: #885ac4;
+                padding: 20px;
+            }
+
+            /*Estilize a lista dentro do menu */
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+            }
+
+            article {
+                float: left;
+                padding: 45px;
+                width: 70%;
+                background-color: #e0e0e0;
+                height: 300px;
+                /* apenas para demonstração, deve ser removido */
+            }
+
+            /* Limpe floats depois as colunas */
+            section::after {
+                content: "";
+                display:table;
+                clear: both;
+            }
+
+            /* estilo do footer */
+            footer {
+                background-color: #60bedb;
+                padding: 35px;
+                text-align: center;
+                color: white;
+            }
+
+            /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+            @media (max-width: 600px) {
+
+                nav,
+                article {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <h2>Restaurante</h2>
+        <p>
+            Neste exemplo, criamos um cabeçalho, duas colunas/caixas e um rodapé. Em telas menores, as colunas serão
+            empilhadas umas sobre as outras.</p>
+        <p> Redimensione a janela do navegador para ver o efeito responsivo</p>
+        <header style="background-image: url(/frutos-do-mar-alergia.webp);background-repeat: no-repeat;">
+            <h2>Frutos do Mar</h2>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Comidas</a></li>
+                    <li><a href="#">Bebidas</a></li>
+                    <li><a href="#">Endereço</a></li>
+                </ul>
+            </nav>
+
+            <article>
+                <h1>Frutos do mar</h1>
+                <p>
+        </section>
+
+        <footer>
+            <p>Redes socias</p>
+        </footer>
+
+    </body>
+
+</html>
+
+<body>
+</body>
+
+</html>
