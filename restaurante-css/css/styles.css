@@ -6,7 +6,7 @@ body{
 }
 
 header{
-        background-color: #ff6347;
+        background-color: #ff6449;
             color: white;
             text-align: center;
             padding: 1rem 0;
@@ -31,7 +31,7 @@ section{
 footer{
     text-align: center;
     padding: 1rem 0;
-    background-color: #ff6347;
+    background-color: #ff6449;
     color: white;
     position: relative;
     bottom: 0;
@@ -48,7 +48,7 @@ th , td{
             text-align: left;
 }
 th{
-    background-color: #ff6347;
+    background-color: #ffc14f;
     color: white;
 }
 form{
@@ -62,7 +62,7 @@ input , textarea {
             border-radius: 4px;
 }
 button{
-    background-color: #ad2929;
+    background-color: #ffc14f;
     color: white;
     border: none;
     padding: 10px;
@@ -90,5 +90,8 @@ button{
     text-align: center;
 }
 
+footer{
+    color: #ffffff;
+}
 
 
