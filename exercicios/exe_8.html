@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada de 1 a 10</title>
+    <style> /* Pedi para o IA montar esse codigo pra mim */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .tabuada {
+            margin-top: 20px;
+        }
+        .tabuada p {
+            font-size: 18px;
+            margin: 5px; 
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabuada de 1 a 10</h1>
+    <div id="tabuada" class="tabuada"></div>
+    <script>
+        function gerarTabuada() {
+            const tabuadaDiv = document.getElementById("tabuada");
+            for (let i = 1; i <= 10; i++) {
+                let resultado = "";
+                for (let j = 1; j <= 10; j++) {
+                    resultado += `${i} x ${j} = ${i * j}<br>`;
+                }
+            
+                tabuadaDiv.innerHTML += `<p><strong>Tabuada do ${i}:</strong><br>${resultado}</p>`;
+            }
+        }
+        gerarTabuada();
+    </script>
+
+</body>
+</html>

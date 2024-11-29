@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PW-ANNA</title>
+
+    <body>
+
+        <h1>Gerador de Valor Aleatório</h1>
+        <div id="resultado" class="resultado">Clique no botão para gerar um valor aleatório.</div>
+        <button onclick="gerarAleatorio()">Gerar Valor Aleatório</button>
+        <script>
+            function gerarAleatorio() {
+                const valorAleatorio = Math.floor(Math.random() * 101);
+                document.getElementById('resultado').innerHTML = `Valor Aleatório: ${valorAleatorio}`;
+            }
+        </script>
+    
+    </body>
+    </html>
